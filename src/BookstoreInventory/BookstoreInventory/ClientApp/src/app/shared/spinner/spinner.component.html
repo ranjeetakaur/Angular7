@@ -1,0 +1,10 @@
+﻿<!--
+p-dialog: modal- defines if background should be blocked when dialog is displayed
+-->
+
+<p-dialog [(visible)]="isLoading" [modal]="true" [showHeader]="false" [responsive]="true" [style]="{width: '50px', minWidth: '50px'}" [minY]="70"
+          [maximizable]="false" [baseZIndex]="10000">
+    <div class="row" style="text-align:center;">
+        <p-progressSpinner [style]="{width: '50px', height: '50px'}" strokeWidth="5" fill="#EEEEEE" animationDuration="2s"></p-progressSpinner>
+    </div>
+</p-dialog>

@@ -1,0 +1,17 @@
+﻿
+:host ::ng-deep .ui-dialog {
+    box-shadow: none;
+}
+
+:host ::ng-deep .ui-shadow {
+    box-shadow: none;
+}
+
+:host ::ng-deep .ui-dialog .ui-dialog-content {
+    background-color: transparent;
+    border: none;
+}
+
+:host ::ng-deep .ui-dialog-resizable .ui-dialog-content {
+    overflow: hidden;
+}

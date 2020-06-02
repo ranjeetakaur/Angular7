@@ -1,0 +1,93 @@
+@import "../../styles/stylevariables.scss";
+
+.header {
+    background-color: $prussian-blue;
+    color: $white;
+    min-height: 80px;
+    padding-top: 10px;
+    height:90px;
+
+    .logo-image {
+        width: 200px;
+        margin: 10px 0px 0px 5px;
+    }
+
+    .app-name {
+        font-size: 40px;
+        letter-spacing: -0.87px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .btn-no-border {
+        border: none;
+        background: none;
+        text-shadow: none;
+        cursor: pointer;
+        outline: none; /* to remove dotted line in IE11 */
+    }
+
+    .nav-actions {
+        margin-top: 10px;
+    }
+
+    .NavBarCaptionL1 {
+        font-weight: 100;
+        font-size: 14px;
+        text-align: left;
+        line-height: 18px;
+    }
+
+    .NavBarCaptionL2 {
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+        line-height: 18px;
+    }
+
+    .image-35 {
+        height: 35px;
+        width: 35px;
+    }
+
+    .NavBarCaptionFN {
+        font-weight: 300;
+        font-size: 16px;
+        text-align: left;
+        line-height: 18px;
+    }
+
+    .NavBarCaptionLN {
+        font-weight: 500;
+        font-size: 18px;
+        text-align: left;
+        line-height: 18px;
+    }
+
+    .img-help {
+        margin-right: 20px;
+    }
+
+    .btn-settings {
+        margin-left: 30px;
+    }        
+}
+
+// bootstrap table for showing help dropdown
+.table th {
+    border-top: 0px;
+}
+
+.table td, .table th {
+    padding: .1rem .0rem 0.1em .75rem;
+    vertical-align: middle !important;
+}
+
+.span-ron-flt {
+    color: $prussian-blue;
+}
+.span-thru-flt {
+    color: $lightning-yellow;
+}
+
+

@@ -1,0 +1,23 @@
+<!-- control bar: select Fleet and Date -->
+
+<div class="control-bar">
+  <div class="container-fluid">
+    <br/>
+    <div class="row">
+      <div class="div-calender-title">Scheduled Date</div>
+    </div>
+
+    <div class="row">
+      <!-- Date select -->      
+        <p-calendar [(ngModel)]="scheduledDate"
+                    [showIcon]="false"                    
+                    dateFormat="mm/dd/yy"
+                    [inputStyle]="{borderRadius:'0px',minWidth:'200px'}">
+        </p-calendar>
+        <span>&nbsp;</span>
+        <p-button label="Go" (onClick)="onScheduledateClick()"></p-button>
+      
+   </div>
+  </div>
+      
+</div>

@@ -1,0 +1,9 @@
+.control-bar {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+:host ::ng-deep .ui-button {
+  height:35px;
+}

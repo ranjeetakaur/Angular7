@@ -1,0 +1,207 @@
+@import "stylevariables";
+
+body .ui-table .ui-table-thead > tr > th {
+    padding: 0em 0em 0em 0.857em;
+    border: 0px;
+    font-weight: 700;
+    color: $prussian-blue;
+    background-color: $mystic-grey;
+    height:40px;
+}
+
+body .ui-table .ui-table-tbody > tr > td {
+    border: 0px;
+    border-bottom: 1px solid $concrete-grey
+}
+
+body .ui-selectbutton .ui-button {
+    border: 1px solid #2172BA;
+    background-color: #EBEBEB;
+}
+
+.ui-buttonset .ui-button {
+    width: 120px;
+}
+body .ui-inputtext{
+    border-radius:0px;
+}
+
+// dynamic dialog header
+body .ui-dialog .ui-dialog-titlebar {
+    border: 1px solid #c8c8c8;
+    background-color: $primary-blue;
+    color: #fff;
+    padding: .7em;
+    font-weight: bold;
+    font-size: 1.4em;
+    border-bottom: none;
+}
+
+// radio button css starts
+
+body .ui-radiobutton .ui-radiobutton-box.ui-state-active .ui-radiobutton-icon {
+    background-color: #2172BA;
+}
+
+body .ui-radiobutton .ui-radiobutton-box {
+    border-color: grey;
+    background-color: white;
+    color: #ffffff;
+}
+
+body .ui-radiobutton .ui-radiobutton-box.ui-state-active {
+    border-color: grey;
+    background-color: white;
+    color: #ffffff;
+}
+
+body .ui-radiobutton .ui-radiobutton-box.ui-state-focus {
+    border-color: grey;
+    background-color: white;
+    color: #ffffff;
+    -webkit-box-shadow:none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+body .ui-radiobutton :not(.ui-state-disabled).ui-radiobutton-box.ui-state-active:hover {
+    border-color: grey;
+    background-color: white;
+    color: #ffffff;
+}
+body .ui-radiobutton .ui-radiobutton-box.ui-state-active.ui-state-focus {
+    border-color: grey;
+    background-color: white;
+    color: #ffffff;
+}
+
+body .ui-radiobutton .ui-radiobutton-box.ui-state-active:not(.ui-state-disabled):hover {
+    border-color: grey;
+    background-color: white;
+    color: #ffffff;
+}
+// radio button css ends
+
+
+// calender icon fix on IE - start
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    body .ui-calendar.ui-calendar-w-btn .ui-datepicker-trigger.ui-button {
+        padding-top: 1px;
+    }
+
+    body .ui-inputtext {
+        padding-bottom: 0.5em;
+    }
+
+}
+// calender icon fix on IE - end
+
+// disable btn cursor pointer for button pButton
+body .ui-state-disabled, body .ui-widget:disabled {
+    cursor: default !important;
+}
+
+body .ui-table-loading {
+    background-color: $primary-blue;
+    color: $primary-blue;
+    font-size: 4em;
+}
+
+/*body .ui-progress-spinner {
+    color: $primary-blue;
+}
+
+body .ui-progress-circle {
+    color: $primary-blue;
+}
+
+body .ui-progress-path {
+    color: $primary-blue;
+}*/
+
+
+@keyframes ui-progress-spinner-color {
+    100%, 0% {
+        stroke: $primary-blue;
+    }
+    40% {
+        stroke: $primary-blue;
+    }
+    66% {
+        stroke: $primary-blue;
+    }
+    80%, 90% {
+        stroke: $primary-blue;
+    }
+}
+
+@-moz-keyframes ui-progress-spinner-color {
+    100%, 0% {
+        stroke: $primary-blue;
+    }
+
+    40% {
+        stroke: $primary-blue;
+    }
+
+    66% {
+        stroke: $primary-blue;
+    }
+
+    80%, 90% {
+        stroke: $primary-blue;
+    }
+}
+
+@-webkit-keyframes ui-progress-spinner-color {
+    100%, 0% {
+        stroke: $primary-blue;
+    }
+    40% {
+        stroke: $primary-blue;
+    }
+    66% {
+        stroke: $primary-blue;
+    }
+    80%, 90% {
+        stroke: $primary-blue;
+    }
+}
+
+@-ms-keyframes ui-progress-spinner-color {
+    100%, 0% {
+        stroke: $primary-blue;
+    }
+
+    40% {
+        stroke: $primary-blue;
+    }
+
+    66% {
+        stroke: $primary-blue;
+    }
+
+    80%, 90% {
+        stroke: $primary-blue;
+    }
+}
+
+@-o-keyframes ui-progress-spinner-color {
+    100%, 0% {
+        stroke: $primary-blue;
+    }
+
+    40% {
+        stroke: $primary-blue;
+    }
+
+    66% {
+        stroke: $primary-blue;
+    }
+
+    80%, 90% {
+        stroke: $primary-blue;
+    }
+}
+

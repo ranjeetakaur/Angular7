@@ -1,0 +1,31 @@
+@import "../../styles/stylevariables.scss";
+
+.container-controlpanel-results {
+  margin-top:40px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.container-bookstores {
+  max-height: 75vh;
+  min-height: 75vh;
+  border: 1px solid $darkgreen;
+  width:auto;
+}
+
+.table-panel-heading {
+  background-color: $darkgreen;
+  color: $white;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3px;
+}
+
+
+// width of table - strech to 100%
+:host ::ng-deep .ui-table-wrapper > table {
+  width:100%;
+}

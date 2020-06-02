@@ -1,0 +1,101 @@
+<div class="row">
+  <input-panel (outputCalenderDateChanged)="eventHandlerDateChange($event)"></input-panel>
+</div>
+
+
+<div class="container-controlpanel-results">
+  
+  <div class="row">
+    <div class="col-xl-3 col-lg-12">
+      <div class="container-bookstores">
+        <div class="table-panel-heading">
+          <span>Stores</span>
+        </div>
+
+        <!-- table Stores placeholder -->
+        <p-table [value]="listBookStores"
+                 selectionMode="single"
+                 [(selection)]="selectedStoreFromTable"
+                 compareSelectionBy="equals"
+                 (onRowSelect)="onBookstoreTableRowSelect()">
+          <ng-template pTemplate="header" let-columns>
+            <tr>
+              <th>Store Id</th>
+              <th>Store Name</th>
+              <th>City</th>
+              <th>Store Address</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-rowData>
+            <tr [pSelectableRow]="rowData">
+              <td>{{rowData.storeId}}</td>
+              <td>{{rowData.storeName}}</td>
+              <td>{{rowData.city}}</td>
+              <td>{{rowData.storeAddress}}</td>
+            </tr>
+          </ng-template>
+
+
+        </p-table>
+
+
+      </div>
+    </div>
+
+    <!-- container for right pane -->
+    <div class="col-xl-9 col-lg-12">
+      <div class="container-bookstores">
+        <div class="table-panel-heading">
+          <span>Store Details</span>
+        </div>
+
+        <!-- table Part details placeholder -->
+
+        <div>
+          <p-table [value]="listStoreDetails">
+
+            <ng-template pTemplate="header" let-columns>
+              <tr>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th>Quantity</th>
+                <th>Page Count</th>
+                <th>Order From Other Stores</th>
+
+              </tr>
+            </ng-template>
+
+            <ng-template pTemplate="body" let-rowData let-rowIndex="rowIndex" let-columns="columns">
+              <tr [pSelectableRow]="rowData">
+
+                <td>{{rowData.bookName}}</td>
+                <td>{{rowData.quantity}}</td>
+                <td>{{rowData.author}}</td>
+                <td>{{rowData.isbn}}</td>
+                <td>{{rowData.pageCount}}</td>
+
+                <td [ngClass]="'th-btns-two'">
+                  <button pButton type="button" label="Order" [ngClass]="'btn-flip'"
+                          (click)="handleBookOrderButtonClick(rowData,rowIndex)"></button>
+
+                </td>
+              </tr>
+            </ng-template>
+          </p-table>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- progress spinner -->
+  <spinner [isLoading]="isLoading"></spinner>
+
+</div>
+
+
+
+

@@ -1,0 +1,59 @@
+<div class="row header">
+    
+        <div class="col-sm-2">
+          <a>            
+            <img class="logo-image" src="images/book.png" style="width:40%;height:50%" />
+          </a>
+        </div>
+
+        <div class="col-sm-6 text-center">
+            <span class="app-name">{{ pageHeaderTitle }}</span>
+        </div>
+
+        <div class="col-sm-4 nav-actions">
+            
+            <div class="row">
+                <div class="col-sm-1">
+                  <button title="refresh" class="btn-no-border" (click)='buttonRefreshHandler()'>                    
+                    <img class="image-35" alt="refresh" src="images/refresh.png" />
+                  </button>
+                </div>
+                <div class="col-sm-3">
+                    <div class="NavBarCaptionL1">Last Refreshed</div>
+                    <div class="NavBarCaptionL2" id="textLastRefreshedTime">{{lastRefreshedTime}}</div>
+                </div>
+                <div class="col-sm-4">
+
+                  <button title="help" class="btn-no-border" (click)="opHelp.toggle($event)">                    
+                    <img class="image-35 img-help" alt="help" src="images/help.png" />
+                  </button>
+                    <!--<p-overlayPanel appendTo="body" #opHelp>                      
+                        
+                        <div style="width:270px;">
+                          Help details
+                        </div>
+
+                    </p-overlayPanel>-->
+
+                    <button title="settings" class="btn-no-border btn-settings">                      
+                      <img class="image-35" alt="settings" src="images/settings.png" />
+                    </button>
+                </div>
+                <div class="col-sm-1">
+                  <button title="user" class="btn-no-border">                    
+                    <img class="image-35" alt="user profile" src="images/user.svg" />
+                  </button>
+                </div>
+                <div class="col-sm-3">
+                    <div class="NavBarCaptionFN">{{firstname}}</div>
+                    <div class="NavBarCaptionLN">{{lastname}}</div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+</div>
+
+   
